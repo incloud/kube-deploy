@@ -20,21 +20,18 @@ jobs:
 
     # Only the last 3 Kubernetes minor versions receive updates:
     - name: v1.17.12
-      id: docker_build
       uses: docker/build-push-action@v2
       with:
         push: true
         tags: v1.17.12
         build-args: KUBE_VERSION=v1.17.12
     - name: v1.18.9
-      id: docker_build
       uses: docker/build-push-action@v2
       with:
         push: true
         tags: v1.18.9
         build-args: KUBE_VERSION=v1.18.9
     - name: v1.19.2
-      id: docker_build
       uses: docker/build-push-action@v2
       with:
         push: true
