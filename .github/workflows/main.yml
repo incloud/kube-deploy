@@ -19,21 +19,21 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     # Only the last 3 Kubernetes minor versions receive updates:
-    - name: v1.17.12
+    - name: v1.17
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: incloudhq/kube-deploy:v1.17.12
-        build-args: KUBE_VERSION=v1.17.12
-    - name: v1.18.9
+        tags: incloudhq/kube-deploy:v1.17.14
+        build-args: KUBE_VERSION=v1.17.14
+    - name: v1.18
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: incloudhq/kube-deploy:v1.18.9
-        build-args: KUBE_VERSION=v1.18.9
-    - name: v1.19.2
+        tags: incloudhq/kube-deploy:v1.18.11
+        build-args: KUBE_VERSION=v1.18.11
+    - name: v1.19
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: incloudhq/kube-deploy:v1.19.2
-        build-args: KUBE_VERSION=v1.19.2
+        tags: incloudhq/kube-deploy:v1.19.4
+        build-args: KUBE_VERSION=v1.19.4
