@@ -29,8 +29,8 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: incloudhq/kube-deploy:v1.18.11
-        build-args: KUBE_VERSION=v1.18.11
+        tags: incloudhq/kube-deploy:v1.18.12
+        build-args: KUBE_VERSION=v1.18.12
     - name: v1.19
       uses: docker/build-push-action@v2
       with:
