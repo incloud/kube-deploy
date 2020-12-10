@@ -23,17 +23,23 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: incloudhq/kube-deploy:v1.17.14
-        build-args: KUBE_VERSION=v1.17.14
+        tags: incloudhq/kube-deploy:v1.17.15
+        build-args: KUBE_VERSION=v1.17.15
     - name: v1.18
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: incloudhq/kube-deploy:v1.18.12
-        build-args: KUBE_VERSION=v1.18.12
+        tags: incloudhq/kube-deploy:v1.18.13
+        build-args: KUBE_VERSION=v1.18.13
     - name: v1.19
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: incloudhq/kube-deploy:v1.19.4
-        build-args: KUBE_VERSION=v1.19.4
+        tags: incloudhq/kube-deploy:v1.19.5
+        build-args: KUBE_VERSION=v1.19.5
+    - name: v1.20
+      uses: docker/build-push-action@v2
+      with:
+        push: true
+        tags: incloudhq/kube-deploy:v1.20.0
+        build-args: KUBE_VERSION=v1.20.0
